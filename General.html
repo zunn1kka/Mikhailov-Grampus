@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Откачка септика</title>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="background-container-up-white">
+            <div class="wrapper">
+                <div class="text-up">
+                    <p class="bold-up">Откачка септика</p>
+                    <p class="regular-up">В Пушкинском районе</p>
+                </div>
+                <div class="number">
+                    <img class = "phone-img" src="Assets/images/SVG/phone.svg">
+                    <a class = "URL-number" href="tel:+79361003131">+7 (936) 100-31-31</a>
+                </div>
+            </div>
+        </div>
+        <div class="background-container-up-blue">
+            <div class="menu">
+                <ul>
+                    <li><a href="#advantage">Преимущества</a></li> <!--Изменены href ссылки, просто вставить их-->
+                    <li><a href="#service">Услуги</a></li>
+                    <li><a href="#step-work">Этапы работы</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#documents">Документы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="background-container-work">
+        <div class="info-container">
+            <div class="info-white">
+                <p>Для звонка наберите номер <a href="tel:+79361003131">+7 (936) 100-31-31</a></p>
+            </div>
+            <div class="info">
+                <div class="names">
+                    <p>Откачка септика</p>
+                    <p>В Пушкинском районе</p>
+                </div>
+                <p class="signature">Для современного мира граница обучения кадров не оставляет шанса для как самодостаточных, 
+                    так и внешне зависимых концептуальных решений.</p>
+                <button class="info-button"><a class="button-modal" data-fancybox data-src="#modal-content">Оставить заявку</a></button>
+                <div class="contact-form" style="display: none;" id="modal-content">
+                    <div class="form-content">
+                      <div class="form-header">
+                        <div class="title">Форма связи</div>
+                        <div class="subtitle">Мы перезвоним вам в ближайшее время</div>
+                      </div>
+                      <div class="input-group">
+                        <div class="label">Телефон</div>
+                        <div class="input-field">
+                          <input class="input" type="tel" id="phone-input" placeholder="+7 (___) ___-__-__" maxlength="11"/>
+                        </div>
+                      </div>
+                      <div class="submit-button" onclick="check()">
+                        <div class="button-text">Отправить</div>
+                      </div>
+                    </div>
+                  </div>                                      
+            </div>
+        </div>
+    </div>
+    <script>
+        Fancybox.bind("[data-fancybox]",
+        {
+            caption: function (self, curr)
+            {
+                return curr.opts.src;
+            },
+        });
+      </script>
+      <script>
+        function check()
+        {
+            var phone = document.getElementById('phone-input');
+            if(!phone.value.trim()){
+                alert("Укажите телефон");
+                return;
+            }
+            else{
+                alert("Форма успешно отправлена!");
+                Fancybox.close();
+            }
+        }
+      </script>
+    <div class="white-background-container-advantages">
+        <div class="advantages-container">
+            <div class="advantage-header">
+                <p class="advantage" id="advantage">Преимущества</p>
+            </div>
+            <div class="advantages-content">
+                <div class="block-container">
+                    <div class="block-row">
+                        <div class="block">
+                            <p class="title-advantages">Оперативность</p>
+                            <p class="text">Приезжаем на откачку в течении часа после оформления заявки</p>
+                        </div>
+                        <div class="block">
+                            <p class="title-advantages">Безопасно</p>
+                            <p class="text">Используем обрабатывающие средства</p>
+                        </div>
+                    </div>
+                    <div class="block-row">
+                        <div class="block">
+                            <p class="title-advantages">Качественно</p>
+                            <p class="text">Все работы выполнит опытный сертифицированный мастер</p>
+                        </div>
+                        <div class="block">
+                            <p class="title-advantages">Не дорого</p>
+                            <p class="text">Вот уже 3 года мы не повышаем цены на обслуживание и ремонт септиков</p>
+                        </div>
+                    </div>
+                    <div class="block-row">
+                        <div class="block">
+                            <p class="title-advantages">Умеем всё</p>
+                            <p class="text">Обслуживаем все модели аэрационных станций, гибридных станций и септиков</p>
+                        </div>
+                        <div class="block">
+                            <p class="title-advantages">Надёжно</p>
+                            <p class="text">Мы используем только оригинальные запчасти. Ваш септик всегда как новый.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="Assets/images/SVG/advantages.svg" class="advantages-image">
+            </div>
+        </div>
+    </div>
+    <div class="gray-background-container-services">
+        <div class="services-container">
+            <div class="service-header">
+                <p class="service" id="service">Услуги нашей компании</p>
+            </div>
+            <div class="service-content">
+                <div class="block-container">
+                    <div class="block-row">
+                        <div class="block">
+                            <img src="Assets/images/SVG/service_part1.svg">
+                            <p class="title-services">Откачка, чистка и ремонт септиков</p>
+                            <p class="text">При откачке септика не следует откачивать весь ил со дна, чтобы остались нужные бактерии для его заражения</p>
+                            <div class="price">
+                                <p>От 1200 р.</p>
+                                <a data-fancybox data-src="#modal-content">Оставить заявку</a>
+                            </div>
+                        </div>  
+                        <div class="block">
+                            <img src="Assets/images/SVG/service_part2.svg" >
+                            <p class="title-services">Откачка выгребных ям</p>
+                            <p class="text">Для откачки выгребной ямы может понадобиться вода для ее разжижения</p>
+                            <div class="price">
+                                <p>От 1200 р.</p>
+                                <a data-fancybox data-src="#modal-content">Оставить заявку</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <img src="Assets/images/SVG/service_part3.svg">
+                            <p class="title-services">Ассенизаторская машина</p>
+                            <p class="text">Откачка жидких бытовых отходов при необходимости (ЖБО)</p>
+                            <div class="price">
+                                <p>От 1200 р.</p>
+                                <a data-fancybox data-src="#modal-content">Оставить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white-background-container-stages">
+        <div class="stages-container">
+            <div class="svg-background">
+                <svg width="1920" height="260" viewBox="0 0 1920 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M-307 258.761C-270.167 181.094 
+                    -146.6 25.3611 53 23.7611C302.5 21.7611 331 138.261 671 152.261C1011 
+                    166.261 966.5 38.2611 1236 5.76106C1505.5 -26.7389 1459.5 115.761 1745 
+                    172.261C1973.4 217.461 2162.17 92.0944 2228 23.7611" stroke="#606060" 
+                    stroke-width="2" stroke-dasharray="10 10"/>
+                    <circle cx="64" cy="33" r="10" fill="#4FADFF"/>
+                    <circle cx="1874" cy="191" r="10" fill="#4FADFF"/>
+                    <circle cx="159.5" cy="40.5" r="7.5" fill="#4FADFF"/>
+                    <circle cx="1734.5" cy="180.5" r="7.5" fill="#4FADFF"/>
+                    <circle cx="268" cy="70" r="5" fill="#4FADFF"/>
+                    <circle cx="1623" cy="146" r="5" fill="#4FADFF"/>
+                </svg>
+            </div>
+            <div class="stage-header">
+                <p class="stage" id="step-work">Этапы работы</p>
+            </div>
+            <div class="stage-content">
+                <div class="block-container">
+                    <div class="block-row">
+                        <div class="block">
+                            <p class="title-stages1">01/</p>
+                            <p class="title-stages2">Онлайн заявка</p>
+                            <p class="text">В своем стремлении улучшить пользовательский опыт мы упускаем, что элементы политического.</p>
+                            <button type="button" class="order-car" data-fancybox data-src="#modal-content">Заказать машину</button>
+                        </div>
+                        <div class="block">
+                            <p class="title-stages1">02/</p>
+                            <p class="title-stages2">Звонок менеджера</p>
+                            <p class="text">Разнообразный и богатый опыт говорит нам, что начало повседневной работы по форматированию позиции не оставляет.</p>
+                        </div>
+                        <div class="block">
+                            <p class="title-stages1">03/</p>
+                            <p class="title-stages2">Откачка</p>
+                            <p class="text">И нет сомнений, что явные признаки победы институционализации неоднозначны и будут объявлены нарушающими.</p>
+                        </div>
+                        <div class="block">
+                            <p class="title-stages1">04/</p>
+                            <p class="title-stages2">Оплата</p>
+                            <p class="text">В своем стремлении повысить качество жизни, они забывают, что дальнейшее развитие различных форм деятельности.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gray-background-container-discounts">
+        <div class="discounts-container">
+            <div class="discount-content">
+                <div class="left">
+                    <div class="discount-header">
+                        <p class="discount">Скидка 10%</p>
+                        <p class="discount-pod">Скидка 10% на первый выезд</p>
+                        <p class="discount-text">
+                            Сложно сказать, почему интерактивные прототипы призваны к ответу.
+                            Банальные, но неопровержимые выводы, а также стремящиеся вытеснить традиционное производство,
+                            нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные
+                            выводы, разумеется, объективно рассмотрены соответствующим инстанциями. А еще сделанные на базе.
+                        </p>
+                        <button type="submit" class="discount-button">
+                            <a class="button-modal" data-fancybox data-src="#modal-content">Оставить заявку</a></button>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="Assets/images/SVG/work5.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white-background-container-completeWork">
+        <div class="block-background-container-completeWork" id="portfolio">
+            <div class="part1">
+                <div class="part1-1">
+                    <p class = "complete-work">Выполненные работы</p>
+                    <p class="name-work">Название работы</p>
+                </div>
+                <div class="part1-2">
+                    <button type ="submit" class="button1"><img src="Assets/images/SVG/arrow-left.svg"></button>
+                    <button type="submit"><img src="Assets/images/SVG/arrow-right.svg"></button>
+                </div>
+            </div>
+            <div class="part2">
+                <p>Характеристики</p>
+                <div class="list">
+                    <div class="part2-1">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ul>
+                    </div>
+                    <div class="part2-2">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="part3">
+                <div class="part3-1">
+                    <img src="Assets/images/SVG/complete-work1.svg">
+                    <img src="Assets/images/SVG/complete-work2.svg">
+                    <img src="Assets/images/SVG/complete-work3.svg">
+                    <img src="Assets/images/SVG/complete-work4.svg" class = "img4">
+                </div>
+            </div>
+            <div class="part4">
+                <div class="block1">
+                    <img src="Assets/images/SVG/Ellipse1.svg">
+                    <div class="text-block">
+                        <p class="title">Материалы</p>
+                        <p class="price-block">4000 руб.</p>
+                    </div>
+                </div>
+                <div class="block2">
+                    <img src="Assets/images/SVG/Ellipse2.svg">
+                    <div class="text-block">
+                        <p class="title">Работа</p>
+                        <p class="price-block">5000 руб.</p>
+                    </div>
+                </div>
+                <div class="block3">
+                    <img src="Assets/images/SVG/Ellipse3.svg">
+                    <div class="text-block">
+                        <p class="title">Итого</p>
+                        <p class="price-block">9000 руб.</p>
+                    </div>
+                    <button type="button"><a class="button-modal" data-fancybox data-src="#modal-content">Оставить заявку</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white-background-container-reviews">
+        <div class="reviews-container">
+            <div class="part1-review" id="reviews">
+                <p>Отзывы наших клиентов</p>
+                <div class="button-review">
+                    <button type ="button" class="button1"><img src="Assets/images/SVG/arrow-left.svg"></button>
+                    <button type="button"><img src="Assets/images/SVG/arrow-right.svg"></button>
+                </div>
+            </div>
+            <div class="part2-review">
+                <div class="block-review">
+                    <div class="part-review-2">
+                        <img src="Assets/images/SVG/Ellipse4.svg">
+                        <div class="name-and-date-review">
+                            <p class="name">Денис Смирнов</p>
+                            <p class="date">10.10.2019</p>
+                        </div>
+                    </div>
+                    <div class="text-review">
+                        <p>Имеется спорная точка зрения, гласящая примерно следующее:
+                        базовые сценарии поведения пользователей формируют глобальную
+                        экономическую сеть и при этом — заблокированы в рамках своих.</p>
+                    </div>
+                </div>
+                <div class="block-review">
+                    <div class="part-review-2">
+                        <img src="Assets/images/SVG/Ellipse4.svg">
+                        <div class="name-and-date-review">
+                            <p class="name">Денис Смирнов</p>
+                            <p class="date">10.10.2019</p>
+                        </div>
+                    </div>
+                    <div class="text-review">
+                        <p>Имеется спорная точка зрения, гласящая примерно следующее:
+                        базовые сценарии поведения пользователей формируют глобальную
+                        экономическую сеть и при этом — заблокированы в рамках своих.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blue-background-container-applications">
+        <div class="block-background-container-applications">
+            <p>Оставьте заявку на звонок</p>
+            <div class="inputs-and-button">
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="white-background-container-documents">
+        <div class="documents-container" id="documents">
+            <div class="part1-documents">
+                <p>Документы и сертификаты</p>
+                <div class="button-documents">
+                    <button type ="button" class="button1"><img src="Assets/images/SVG/arrow-left.svg"></button>
+                    <button type="button"><img src="Assets/images/SVG/arrow-right.svg"></button>
+                </div>
+            </div>
+            <div class="part2-documents">
+                <div class="block-documents">
+                    <img src="Assets/images/SVG/certificate.svg">
+                    <p>Только сплочённость команды профессионалов сделала своё дело</p>
+                </div>
+                <div class="block-documents">
+                    <img src="Assets/images/SVG/certificate.svg">
+                    <p>Только сплочённость команды профессионалов сделала своё дело</p>
+                </div>
+                <div class="block-documents">
+                    <img src="Assets/images/SVG/certificate.svg">
+                    <p>Только сплочённость команды профессионалов сделала своё дело</p>
+                </div>
+                <div class="block-documents">
+                    <img src="Assets/images/SVG/certificate.svg">
+                    <p>Только сплочённость команды профессионалов сделала своё дело</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards-background-container-contacts">
+        <div class="cards-container">
+            <div class="block-background-container-contacts">
+                <div class="contacts">
+                    <p class="p-contacts" id="contacts">Контакты</p>
+                    <div class="contacts-company">
+                        <div class="work-schedule">
+                            <img src="Assets/images/SVG/clock.svg">
+                            <div class="text">
+                                <p>Приём заказов:</p>
+                                <p>Ежедневно с 08:00 до 22:00</p>
+                            </div>
+                        </div>
+                        <div class="type-oplaty">
+                            <img src="Assets/images/SVG/credit-card.svg">
+                            <div class="text">
+                                <p>Оплата по договору наличными/</p>
+                                <p>безналичными, с НДС и без НДС</p>
+                            </div>
+                        </div>
+                        <div class="adress">
+                            <img src="Assets/images/SVG/location-marker.svg">
+                            <div class="text">
+                                <p>Московская область, г. Пушкин,</p>
+                                <p>ул. Красноармейская, д. 16А</p>
+                            </div>
+                        </div>
+                        <div class="number-and-email">
+                            <div class="part1-number-and-email">
+                                <div class="element1">
+                                    <img src="Assets/images/SVG/mail.svg">
+                                    <a href="mailto:name@email.com">name@email.com</a>
+                                </div>
+                                <div class="element2">
+                                    <img src="Assets/images/SVG/phone.svg">
+                                    <a href="tel:+79361003131">+7 (936) 100-31-31</a>
+                                </div>
+
+                            </div>
+                            <div class="part2-number-and-email">
+                                <div class="element1">
+                                    <img src="Assets/images/SVG/phone.svg">
+                                    <a href="tel:+79362003131">+7 (936) 200-31-31</a>
+                                </div>
+                                <div class="element2">
+                                    <img src="Assets/images/SVG/phone.svg">
+                                    <a href="tel:+79266001126">+7 (936) 600-11-26</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <p>Пишите нам в социальных сетях:</p>
+                    <div class="icons-social-media">
+                        <a href="#"><img src="Assets/images/SVG/whatsapp.svg"></a>
+                        <a href="#"><img src="Assets/images/SVG/telegram.svg"></a>
+                    </div>
+                </div>
+                <button type="button" data-fancybox data-src="#modal-content">Заказать звонок</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="black-background-container-footer">
+            <div class="container-footer">
+                <a href = "#" class="defender">Политика конфиденциальности</a>
+                <p>Сайт разработан <img src="Assets/images/SVG/GRAMPUS.svg"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
