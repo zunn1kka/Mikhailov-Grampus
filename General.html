@@ -1,468 +1,1508 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Откачка септика</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Проект Михайлова</title>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-</head>
-<body>
-    <header class="header">
-        <div class="background-container-up-white">
-            <div class="wrapper">
-                <div class="text-up">
-                    <p class="bold-up">Откачка септика</p>
-                    <p class="regular-up">В Пушкинском районе</p>
-                </div>
-                <div class="number">
-                    <img class = "phone-img" src="Assets/images/SVG/phone.svg">
-                    <a class = "URL-number" href="tel:+79361003131">+7 (936) 100-31-31</a>
-                </div>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img src="Assets/images/logo.png" alt="Логотип" />
+          <div class="text_logo">
+            <h1>Проект Михайлова</h1>
+            <p>Самозанятый Георгий Рафаилович Михайлов</p>
+          </div>
         </div>
-        <div class="background-container-up-blue">
-            <div class="menu">
-                <ul>
-                    <li><a href="#advantage">Преимущества</a></li> <!--Изменены href ссылки, просто вставить их-->
-                    <li><a href="#service">Услуги</a></li>
-                    <li><a href="#step-work">Этапы работы</a></li>
-                    <li><a href="#portfolio">Портфолио</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#documents">Документы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <div class="background-container-work">
-        <div class="info-container">
-            <div class="info-white">
-                <p>Для звонка наберите номер <a href="tel:+79361003131">+7 (936) 100-31-31</a></p>
-            </div>
-            <div class="info">
-                <div class="names">
-                    <p>Откачка септика</p>
-                    <p>В Пушкинском районе</p>
-                </div>
-                <p class="signature">Для современного мира граница обучения кадров не оставляет шанса для как самодостаточных, 
-                    так и внешне зависимых концептуальных решений.</p>
-                <button class="info-button"><a class="button-modal" data-fancybox data-src="#modal-content">Оставить заявку</a></button>
-                <div class="contact-form" style="display: none;" id="modal-content">
-                    <div class="form-content">
-                      <div class="form-header">
-                        <div class="title">Форма связи</div>
-                        <div class="subtitle">Мы перезвоним вам в ближайшее время</div>
-                      </div>
-                      <div class="input-group">
-                        <div class="label">Телефон</div>
-                        <div class="input-field">
-                          <input class="input" type="tel" id="phone-input" placeholder="+7 (___) ___-__-__" maxlength="11"/>
-                        </div>
-                      </div>
-                      <div class="submit-button" onclick="check()">
-                        <div class="button-text">Отправить</div>
-                      </div>
-                    </div>
-                  </div>                                      
-            </div>
-        </div>
-    </div>
-    <script>
-        Fancybox.bind("[data-fancybox]",
-        {
-            caption: function (self, curr)
-            {
-                return curr.opts.src;
-            },
-        });
-      </script>
-      <script>
-        function check()
-        {
-            var phone = document.getElementById('phone-input');
-            if(!phone.value.trim()){
-                alert("Укажите телефон");
-                return;
-            }
-            else{
-                alert("Форма успешно отправлена!");
-                Fancybox.close();
-            }
-        }
-      </script>
-    <div class="white-background-container-advantages">
-        <div class="advantages-container">
-            <div class="advantage-header">
-                <p class="advantage" id="advantage">Преимущества</p>
-            </div>
-            <div class="advantages-content">
-                <div class="block-container">
-                    <div class="block-row">
-                        <div class="block">
-                            <p class="title-advantages">Оперативность</p>
-                            <p class="text">Приезжаем на откачку в течении часа после оформления заявки</p>
-                        </div>
-                        <div class="block">
-                            <p class="title-advantages">Безопасно</p>
-                            <p class="text">Используем обрабатывающие средства</p>
-                        </div>
-                    </div>
-                    <div class="block-row">
-                        <div class="block">
-                            <p class="title-advantages">Качественно</p>
-                            <p class="text">Все работы выполнит опытный сертифицированный мастер</p>
-                        </div>
-                        <div class="block">
-                            <p class="title-advantages">Не дорого</p>
-                            <p class="text">Вот уже 3 года мы не повышаем цены на обслуживание и ремонт септиков</p>
-                        </div>
-                    </div>
-                    <div class="block-row">
-                        <div class="block">
-                            <p class="title-advantages">Умеем всё</p>
-                            <p class="text">Обслуживаем все модели аэрационных станций, гибридных станций и септиков</p>
-                        </div>
-                        <div class="block">
-                            <p class="title-advantages">Надёжно</p>
-                            <p class="text">Мы используем только оригинальные запчасти. Ваш септик всегда как новый.</p>
-                        </div>
-                    </div>
-                </div>
-                <img src="Assets/images/SVG/advantages.svg" class="advantages-image">
-            </div>
-        </div>
-    </div>
-    <div class="gray-background-container-services">
-        <div class="services-container">
-            <div class="service-header">
-                <p class="service" id="service">Услуги нашей компании</p>
-            </div>
-            <div class="service-content">
-                <div class="block-container">
-                    <div class="block-row">
-                        <div class="block">
-                            <img src="Assets/images/SVG/service_part1.svg">
-                            <p class="title-services">Откачка, чистка и ремонт септиков</p>
-                            <p class="text">При откачке септика не следует откачивать весь ил со дна, чтобы остались нужные бактерии для его заражения</p>
-                            <div class="price">
-                                <p>От 1200 р.</p>
-                                <a data-fancybox data-src="#modal-content">Оставить заявку</a>
-                            </div>
-                        </div>  
-                        <div class="block">
-                            <img src="Assets/images/SVG/service_part2.svg" >
-                            <p class="title-services">Откачка выгребных ям</p>
-                            <p class="text">Для откачки выгребной ямы может понадобиться вода для ее разжижения</p>
-                            <div class="price">
-                                <p>От 1200 р.</p>
-                                <a data-fancybox data-src="#modal-content">Оставить заявку</a>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <img src="Assets/images/SVG/service_part3.svg">
-                            <p class="title-services">Ассенизаторская машина</p>
-                            <p class="text">Откачка жидких бытовых отходов при необходимости (ЖБО)</p>
-                            <div class="price">
-                                <p>От 1200 р.</p>
-                                <a data-fancybox data-src="#modal-content">Оставить заявку</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="white-background-container-stages">
-        <div class="stages-container">
-            <div class="svg-background">
-                <svg width="1920" height="260" viewBox="0 0 1920 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M-307 258.761C-270.167 181.094 
-                    -146.6 25.3611 53 23.7611C302.5 21.7611 331 138.261 671 152.261C1011 
-                    166.261 966.5 38.2611 1236 5.76106C1505.5 -26.7389 1459.5 115.761 1745 
-                    172.261C1973.4 217.461 2162.17 92.0944 2228 23.7611" stroke="#606060" 
-                    stroke-width="2" stroke-dasharray="10 10"/>
-                    <circle cx="64" cy="33" r="10" fill="#4FADFF"/>
-                    <circle cx="1874" cy="191" r="10" fill="#4FADFF"/>
-                    <circle cx="159.5" cy="40.5" r="7.5" fill="#4FADFF"/>
-                    <circle cx="1734.5" cy="180.5" r="7.5" fill="#4FADFF"/>
-                    <circle cx="268" cy="70" r="5" fill="#4FADFF"/>
-                    <circle cx="1623" cy="146" r="5" fill="#4FADFF"/>
-                </svg>
-            </div>
-            <div class="stage-header">
-                <p class="stage" id="step-work">Этапы работы</p>
-            </div>
-            <div class="stage-content">
-                <div class="block-container">
-                    <div class="block-row">
-                        <div class="block">
-                            <p class="title-stages1">01/</p>
-                            <p class="title-stages2">Онлайн заявка</p>
-                            <p class="text">В своем стремлении улучшить пользовательский опыт мы упускаем, что элементы политического.</p>
-                            <button type="button" class="order-car" data-fancybox data-src="#modal-content">Заказать машину</button>
-                        </div>
-                        <div class="block">
-                            <p class="title-stages1">02/</p>
-                            <p class="title-stages2">Звонок менеджера</p>
-                            <p class="text">Разнообразный и богатый опыт говорит нам, что начало повседневной работы по форматированию позиции не оставляет.</p>
-                        </div>
-                        <div class="block">
-                            <p class="title-stages1">03/</p>
-                            <p class="title-stages2">Откачка</p>
-                            <p class="text">И нет сомнений, что явные признаки победы институционализации неоднозначны и будут объявлены нарушающими.</p>
-                        </div>
-                        <div class="block">
-                            <p class="title-stages1">04/</p>
-                            <p class="title-stages2">Оплата</p>
-                            <p class="text">В своем стремлении повысить качество жизни, они забывают, что дальнейшее развитие различных форм деятельности.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="gray-background-container-discounts">
-        <div class="discounts-container">
-            <div class="discount-content">
-                <div class="left">
-                    <div class="discount-header">
-                        <p class="discount">Скидка 10%</p>
-                        <p class="discount-pod">Скидка 10% на первый выезд</p>
-                        <p class="discount-text">
-                            Сложно сказать, почему интерактивные прототипы призваны к ответу.
-                            Банальные, но неопровержимые выводы, а также стремящиеся вытеснить традиционное производство,
-                            нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные
-                            выводы, разумеется, объективно рассмотрены соответствующим инстанциями. А еще сделанные на базе.
-                        </p>
-                        <button type="submit" class="discount-button">
-                            <a class="button-modal" data-fancybox data-src="#modal-content">Оставить заявку</a></button>
-                    </div>
-                </div>
-                <div class="right">
-                    <img src="Assets/images/SVG/work5.svg">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="white-background-container-completeWork">
-        <div class="block-background-container-completeWork" id="portfolio">
-            <div class="part1">
-                <div class="part1-1">
-                    <p class = "complete-work">Выполненные работы</p>
-                    <p class="name-work">Название работы</p>
-                </div>
-                <div class="part1-2">
-                    <button type ="submit" class="button1"><img src="Assets/images/SVG/arrow-left.svg"></button>
-                    <button type="submit"><img src="Assets/images/SVG/arrow-right.svg"></button>
-                </div>
-            </div>
-            <div class="part2">
-                <p>Характеристики</p>
-                <div class="list">
-                    <div class="part2-1">
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                        </ul>
-                    </div>
-                    <div class="part2-2">
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="part3">
-                <div class="part3-1">
-                    <img src="Assets/images/SVG/complete-work1.svg">
-                    <img src="Assets/images/SVG/complete-work2.svg">
-                    <img src="Assets/images/SVG/complete-work3.svg">
-                    <img src="Assets/images/SVG/complete-work4.svg" class = "img4">
-                </div>
-            </div>
-            <div class="part4">
-                <div class="block1">
-                    <img src="Assets/images/SVG/Ellipse1.svg">
-                    <div class="text-block">
-                        <p class="title">Материалы</p>
-                        <p class="price-block">4000 руб.</p>
-                    </div>
-                </div>
-                <div class="block2">
-                    <img src="Assets/images/SVG/Ellipse2.svg">
-                    <div class="text-block">
-                        <p class="title">Работа</p>
-                        <p class="price-block">5000 руб.</p>
-                    </div>
-                </div>
-                <div class="block3">
-                    <img src="Assets/images/SVG/Ellipse3.svg">
-                    <div class="text-block">
-                        <p class="title">Итого</p>
-                        <p class="price-block">9000 руб.</p>
-                    </div>
-                    <button type="button"><a class="button-modal" data-fancybox data-src="#modal-content">Оставить заявку</a></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="white-background-container-reviews">
-        <div class="reviews-container">
-            <div class="part1-review" id="reviews">
-                <p>Отзывы наших клиентов</p>
-                <div class="button-review">
-                    <button type ="button" class="button1"><img src="Assets/images/SVG/arrow-left.svg"></button>
-                    <button type="button"><img src="Assets/images/SVG/arrow-right.svg"></button>
-                </div>
-            </div>
-            <div class="part2-review">
-                <div class="block-review">
-                    <div class="part-review-2">
-                        <img src="Assets/images/SVG/Ellipse4.svg">
-                        <div class="name-and-date-review">
-                            <p class="name">Денис Смирнов</p>
-                            <p class="date">10.10.2019</p>
-                        </div>
-                    </div>
-                    <div class="text-review">
-                        <p>Имеется спорная точка зрения, гласящая примерно следующее:
-                        базовые сценарии поведения пользователей формируют глобальную
-                        экономическую сеть и при этом — заблокированы в рамках своих.</p>
-                    </div>
-                </div>
-                <div class="block-review">
-                    <div class="part-review-2">
-                        <img src="Assets/images/SVG/Ellipse4.svg">
-                        <div class="name-and-date-review">
-                            <p class="name">Денис Смирнов</p>
-                            <p class="date">10.10.2019</p>
-                        </div>
-                    </div>
-                    <div class="text-review">
-                        <p>Имеется спорная точка зрения, гласящая примерно следующее:
-                        базовые сценарии поведения пользователей формируют глобальную
-                        экономическую сеть и при этом — заблокированы в рамках своих.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="blue-background-container-applications">
-        <div class="block-background-container-applications">
-            <p>Оставьте заявку на звонок</p>
-            <div class="inputs-and-button">
-                <form action="">
-                    <input type="text" placeholder="Имя">
-                    <input type="tel" placeholder="Телефон">
-                    <button type="submit">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="white-background-container-documents">
-        <div class="documents-container" id="documents">
-            <div class="part1-documents">
-                <p>Документы и сертификаты</p>
-                <div class="button-documents">
-                    <button type ="button" class="button1"><img src="Assets/images/SVG/arrow-left.svg"></button>
-                    <button type="button"><img src="Assets/images/SVG/arrow-right.svg"></button>
-                </div>
-            </div>
-            <div class="part2-documents">
-                <div class="block-documents">
-                    <img src="Assets/images/SVG/certificate.svg">
-                    <p>Только сплочённость команды профессионалов сделала своё дело</p>
-                </div>
-                <div class="block-documents">
-                    <img src="Assets/images/SVG/certificate.svg">
-                    <p>Только сплочённость команды профессионалов сделала своё дело</p>
-                </div>
-                <div class="block-documents">
-                    <img src="Assets/images/SVG/certificate.svg">
-                    <p>Только сплочённость команды профессионалов сделала своё дело</p>
-                </div>
-                <div class="block-documents">
-                    <img src="Assets/images/SVG/certificate.svg">
-                    <p>Только сплочённость команды профессионалов сделала своё дело</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="cards-background-container-contacts">
-        <div class="cards-container">
-            <div class="block-background-container-contacts">
-                <div class="contacts">
-                    <p class="p-contacts" id="contacts">Контакты</p>
-                    <div class="contacts-company">
-                        <div class="work-schedule">
-                            <img src="Assets/images/SVG/clock.svg">
-                            <div class="text">
-                                <p>Приём заказов:</p>
-                                <p>Ежедневно с 08:00 до 22:00</p>
-                            </div>
-                        </div>
-                        <div class="type-oplaty">
-                            <img src="Assets/images/SVG/credit-card.svg">
-                            <div class="text">
-                                <p>Оплата по договору наличными/</p>
-                                <p>безналичными, с НДС и без НДС</p>
-                            </div>
-                        </div>
-                        <div class="adress">
-                            <img src="Assets/images/SVG/location-marker.svg">
-                            <div class="text">
-                                <p>Московская область, г. Пушкин,</p>
-                                <p>ул. Красноармейская, д. 16А</p>
-                            </div>
-                        </div>
-                        <div class="number-and-email">
-                            <div class="part1-number-and-email">
-                                <div class="element1">
-                                    <img src="Assets/images/SVG/mail.svg">
-                                    <a href="mailto:name@email.com">name@email.com</a>
-                                </div>
-                                <div class="element2">
-                                    <img src="Assets/images/SVG/phone.svg">
-                                    <a href="tel:+79361003131">+7 (936) 100-31-31</a>
-                                </div>
+        <div class="contact">
+          <div class="mail">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z"
+                stroke="#57ADE4"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h1>georgyrmikhailov@yandex.ru</h1>
+          </div>
+          <div class="phone">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.58579 4.08579C3.21071 4.46086 3 4.96957 3 5.5V6.5C3 14.784 9.716 21.5 18 21.5H19C19.5304 21.5 20.0391 21.2893 20.4142 20.9142C20.7893 20.5391 21 20.0304 21 19.5V16.221C21.0001 16.011 20.934 15.8064 20.8112 15.636C20.6885 15.4657 20.5152 15.3383 20.316 15.272L15.823 13.774C15.5947 13.6981 15.3466 13.7071 15.1244 13.7993C14.9021 13.8915 14.7205 14.0607 14.613 14.276L13.483 16.533C11.0345 15.4267 9.07332 13.4655 7.967 11.017L10.224 9.887C10.4393 9.77945 10.6085 9.5979 10.7007 9.37564C10.7929 9.15339 10.8019 8.90534 10.726 8.677L9.228 4.184C9.16171 3.98496 9.03449 3.8118 8.86436 3.68905C8.69422 3.5663 8.48979 3.50016 8.28 3.5H5C4.46957 3.5 3.96086 3.71071 3.58579 4.08579Z"
+                stroke="#57ADE4"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
 
-                            </div>
-                            <div class="part2-number-and-email">
-                                <div class="element1">
-                                    <img src="Assets/images/SVG/phone.svg">
-                                    <a href="tel:+79362003131">+7 (936) 200-31-31</a>
-                                </div>
-                                <div class="element2">
-                                    <img src="Assets/images/SVG/phone.svg">
-                                    <a href="tel:+79266001126">+7 (936) 600-11-26</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-media">
-                    <p>Пишите нам в социальных сетях:</p>
-                    <div class="icons-social-media">
-                        <a href="#"><img src="Assets/images/SVG/whatsapp.svg"></a>
-                        <a href="#"><img src="Assets/images/SVG/telegram.svg"></a>
-                    </div>
-                </div>
-                <button type="button" data-fancybox data-src="#modal-content">Заказать звонок</button>
-            </div>
+            <h1>+7 (999) 999-99-99</h1>
+          </div>
         </div>
+      </div>
+      <div class="menubar">
+        <ul class="menu">
+          <li class="dropdown">
+            <a>О биофильтре</a>
+            <ul class="submenu">
+              <li><a href="#biofilter_advantages">Преимущества</a></li>
+              <li><a href="#biofilter_principle">Принцип работы</a></li>
+              <li><a href="#biofilter_equipment">Комплектация</a></li>
+              <li><a href="#biofilter_control">Контроль работы</a></li>
+              <li><a href="#biofilter_service">Обслуживание</a></li>
+            </ul>
+          </li>
+          <li><a href="#company">О компании</a></li>
+          <li><a href="#equipment">Оборудование</a></li>
+          <li><a href="#pond">Создание водоёмов</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#stages">Этапы работы</a></li>
+        </ul>
+      </div>
+      <div class="contact_us">
+        <div class="info">
+          <h1>Настоящий Биофильтр Проект Михайлова</h1>
+          <p>Красота и безмятежность лотоса на водной глади</p>
+          <button class="bid btn" data-fancybox data-src="#modal-content">
+            Оставить заявку
+          </button>
+          <div class="arrows">
+            <button class="btn_arrows">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="1"
+                  y="1"
+                  width="32"
+                  height="32"
+                  rx="16"
+                  stroke="#F2F6F6"
+                  stroke-width="2"
+                />
+                <path
+                  d="M8 17H26M12 21L8 17L12 21ZM8 17L12 13L8 17Z"
+                  stroke="#F2F6F6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="btn_arrows">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="1"
+                  y="1"
+                  width="32"
+                  height="32"
+                  rx="16"
+                  stroke="#F2F6F6"
+                  stroke-width="2"
+                />
+                <path
+                  d="M22 13L26 17M26 17L22 21M26 17H8"
+                  stroke="#F2F6F6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="biofilter" id="about_filter">
+        <h1>Что такое биофильтр?</h1>
+        <div class="first">
+          <p>
+            В биофильтре «Проекта Михайлова» устранены все конструктивные минусы
+            и устаревший подход к принципам фильтрации. Мы избавились от
+            сложного обслуживания и дорогой эксплуатации. Приобретая наш
+            биофильтр Вы получаете уверенность в его надежности, и в правильном
+            подходе к фильтрации. Вам не придется тратить деньги на возможный
+            ремонт и постоянную закупку расходных материалов, а это десятки
+            тысяч рублей. Биофильтр, сделан из прочной, надежной нержавеющей
+            стали, толщиной 1,5 миллиметра. Отсутствие многочисленных фитингов с
+            прокладками избавят вас от возможных поломок и протечек. Всего один
+            приварной штуцер для подключения подающего шлага.
+          </p>
+          <img src="Assets/images/biofilter1.jpg" alt="Биофильтр" />
+        </div>
+        <div class="second">
+          <p>
+            В биофильтре нет сливных отверстий, что делает его более надежным и
+            удобным при монтаже. Сливы здесь просто не нужны. В фильтре не
+            скапливается грязь и не цветёт губка, так как здесь действительно
+            работающая колония бактерий, утилизирует всю органику, которая в
+            него попадает. Фильтр, предназначен для водоемов с рыбой до 80000
+            литров ( 80 метров кубических)
+          </p>
+          <img src="Assets/images/biofilter2.jpg" alt="Биофильтр" />
+        </div>
+      </div>
+      <div class="advantages" id="biofilter_advantages">
+        <h1>Преимущества</h1>
+        <ul class="advantages">
+          <li class="advantage">
+            <svg
+              width="68"
+              height="56"
+              viewBox="0 0 68 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M67.3014 24.8336L61.6019 21.9844L67.3014 19.1407C67.4834 19.05 67.6365 18.9103 67.7435 18.7374C67.8506 18.5645 67.9073 18.3651 67.9073 18.1618C67.9073 17.9584 67.8506 17.7591 67.7435 17.5861C67.6365 17.4132 67.4834 17.2736 67.3014 17.1829L34.4889 0.776609C34.3371 0.700748 34.1697 0.661255 34 0.661255C33.8303 0.661255 33.6629 0.700748 33.5111 0.776609L0.698578 17.1829C0.51657 17.2736 0.363456 17.4132 0.256432 17.5861C0.149408 17.7591 0.0927124 17.9584 0.0927124 18.1618C0.0927124 18.3651 0.149408 18.5645 0.256432 18.7374C0.363456 18.9103 0.51657 19.05 0.698578 19.1407L6.39811 21.9844L0.698578 24.8336C0.51676 24.9245 0.363856 25.0642 0.257019 25.2371C0.150182 25.41 0.0936391 25.6093 0.0937338 25.8125V30.1875C0.0926193 30.3917 0.148682 30.5921 0.255575 30.7661C0.362469 30.9401 0.515926 31.0807 0.698578 31.1719L6.39811 34.0157L0.698578 36.8594C0.51657 36.9501 0.363456 37.0898 0.256432 37.2627C0.149408 37.4356 0.0927124 37.635 0.0927124 37.8383C0.0927124 38.0417 0.149408 38.241 0.256432 38.4139C0.363456 38.5869 0.51657 38.7265 0.698578 38.8172L33.5111 55.2235C33.6629 55.2993 33.8303 55.3388 34 55.3388C34.1697 55.3388 34.3371 55.2993 34.4889 55.2235L67.3014 38.8172C67.4834 38.7265 67.6365 38.5869 67.7435 38.4139C67.8506 38.241 67.9073 38.0417 67.9073 37.8383C67.9073 37.635 67.8506 37.4356 67.7435 37.2627C67.6365 37.0898 67.4834 36.9501 67.3014 36.8594L61.6019 34.0157L67.3014 31.1719C67.484 31.0807 67.6375 30.9401 67.7444 30.7661C67.8513 30.5921 67.9073 30.3917 67.9062 30.1875V25.8125C67.9063 25.6093 67.8498 25.41 67.743 25.2371C67.6361 25.0642 67.4832 24.9245 67.3014 24.8336ZM34 2.97286L64.3669 18.1563L34 33.3397L3.63311 18.1563L34 2.97286ZM33.5111 35.5469C33.6629 35.6228 33.8303 35.6623 34 35.6623C34.1697 35.6623 34.3371 35.6228 34.4889 35.5469L59.1562 23.2072L64.3669 25.8125L34 40.996L3.63311 25.8125L8.84373 23.2072L33.5111 35.5469ZM2.28123 27.5822L32.9062 42.8947V44.8241L2.28123 29.5116V27.5822ZM64.3669 37.8438L34 53.0272L3.63311 37.8438L8.84373 35.2385L33.5111 47.5782C33.6629 47.654 33.8303 47.6935 34 47.6935C34.1697 47.6935 34.3371 47.654 34.4889 47.5782L59.1562 35.2385L64.3669 37.8438ZM35.0937 44.8241V42.8947L65.7187 27.5822V29.5116L35.0937 44.8241Z"
+                fill="#57ADE4"
+              />
+            </svg>
+            <h3>Не дорогая эксплуатация</h3>
+            <p>
+              Нет дорогих расходных материалов. Нет наполнитель требующих частой
+              замены.
+            </p>
+          </li>
+          <li class="advantage">
+            <svg
+              width="46"
+              height="70"
+              viewBox="0 0 46 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M44 67.6667H40.5V64.1667C40.5 63.5224 39.9776 63 39.3333 63H38.1667V58.6647C38.1842 52.164 35.6006 45.9264 30.9917 41.342L24.6497 35L30.9917 28.658C35.6006 24.0736 38.1842 17.836 38.1667 11.3353V7H39.3333C39.9776 7 40.5 6.47762 40.5 5.83333V2.33333H44C44.6443 2.33333 45.1667 1.81096 45.1667 1.16667C45.1667 0.522375 44.6443 0 44 0H2.00001C1.35572 0 0.833344 0.522375 0.833344 1.16667C0.833344 1.81096 1.35572 2.33333 2.00001 2.33333H5.50001V5.83333C5.50001 6.47762 6.02239 7 6.66668 7H7.83334V11.3353C7.81584 17.836 10.3994 24.0736 15.0083 28.658L21.3503 35L15.0083 41.342C10.3994 45.9264 7.81584 52.164 7.83334 58.6647V63H6.66668C6.02239 63 5.50001 63.5224 5.50001 64.1667V67.6667H2.00001C1.35572 67.6667 0.833344 68.189 0.833344 68.8333C0.833344 69.4776 1.35572 70 2.00001 70H44C44.6443 70 45.1667 69.4776 45.1667 68.8333C45.1667 68.189 44.6443 67.6667 44 67.6667ZM7.83334 2.33333H38.1667V4.66667H7.83334V2.33333ZM16.658 27.0083C12.4883 22.8602 10.1509 17.2168 10.1667 11.3353V7H35.8333V11.3353C35.8491 17.2168 33.5117 22.8602 29.342 27.0083L23 33.3503L16.658 27.0083ZM10.1667 58.6647C10.1509 52.7832 12.4883 47.1397 16.658 42.9917L23 36.6497L29.342 42.9917C33.5117 47.1397 35.8491 52.7832 35.8333 58.6647V63H10.1667V58.6647ZM38.1667 67.6667H7.83334V65.3333H38.1667V67.6667Z"
+                fill="#57ADE4"
+              />
+            </svg>
+            <h3>Долговечность</h3>
+            <p>
+              Нет энергоемкого оборудования. Нет причин для поломок и протечек.
+              Нет необходимости частого и трудоемкого обслуживания
+            </p>
+          </li>
+          <li class="advantage">
+            <svg
+              width="44"
+              height="70"
+              viewBox="0 0 44 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.8573 49.0075L13.0503 36.3711C12.928 35.8203 12.3825 35.4725 11.8316 35.5954C11.2809 35.7177 10.9337 36.2634 11.0559 36.814L13.8629 49.4503C13.9687 49.9265 14.3909 50.2507 14.8591 50.2507C14.9326 50.2507 15.0069 50.2427 15.0816 50.2261C15.6323 50.1037 15.9795 49.5581 15.8573 49.0075Z"
+                fill="#57ADE4"
+              />
+              <path
+                d="M20.5935 49.1536L19.6581 36.5171C19.6164 35.9546 19.1284 35.5335 18.5639 35.5738C18.0013 35.6155 17.579 36.1053 17.6207 36.668L18.5563 49.3044C18.5961 49.8413 19.0439 50.2505 19.5739 50.2505C19.5992 50.2505 19.6247 50.2495 19.6503 50.2477C20.2129 50.2062 20.6352 49.7163 20.5935 49.1536Z"
+                fill="#57ADE4"
+              />
+              <path
+                d="M25.2995 35.5739C24.7372 35.5334 24.247 35.9545 24.2053 36.5171L23.2698 49.1534C23.2281 49.716 23.6504 50.2059 24.213 50.2476C24.2387 50.2495 24.2641 50.2503 24.2894 50.2503C24.8192 50.2503 25.2672 49.8413 25.307 49.3042L26.2426 36.6679C26.2844 36.1053 25.8621 35.6154 25.2995 35.5739Z"
+                fill="#57ADE4"
+              />
+              <path
+                d="M32.0288 35.5953C31.4778 35.4726 30.9324 35.8202 30.8101 36.3711L28.0031 49.0074C27.8807 49.5581 28.2281 50.1037 28.7788 50.226C28.8535 50.2427 28.928 50.2506 29.0013 50.2506C29.4695 50.2506 29.8917 49.9265 29.9976 49.4503L32.8045 36.8139C32.9269 36.2633 32.5795 35.7177 32.0288 35.5953Z"
+                fill="#57ADE4"
+              />
+              <path
+                d="M22 0C9.97926 0 0.199785 9.77947 0.199785 21.8002C0.199785 24.0607 0.54582 26.2912 1.22859 28.4314C1.2301 28.4381 1.2331 28.4444 1.23488 28.4511C1.23611 28.4559 1.23748 28.4608 1.23871 28.4656C1.24158 28.4764 1.24404 28.4872 1.24732 28.4979C1.25388 28.5191 1.26181 28.5401 1.26988 28.561C1.27439 28.5731 1.27863 28.5851 1.28369 28.5969C1.28615 28.6029 1.28793 28.6089 1.29053 28.6149C1.51898 29.1277 1.7447 29.6366 1.96838 30.1434C5.5988 38.3668 8.66211 46.0324 10.0087 54.9019C10.2233 56.3158 11.1634 57.441 12.4191 57.9257V65.4581C12.4191 67.9625 14.4567 70 16.9609 70H27.039C29.5433 70 31.5808 67.9625 31.5808 65.4581V57.9257C32.8365 57.4409 33.7766 56.3158 33.9913 54.9019C35.337 46.0382 38.3969 38.3772 42.024 30.1605C42.2501 29.6481 42.4785 29.1335 42.7095 28.6149C42.7268 28.5764 42.7406 28.5372 42.7527 28.4979C42.756 28.4872 42.7585 28.4764 42.7613 28.4656C42.7627 28.4607 42.7641 28.4556 42.7653 28.4507C43.452 26.3048 43.8003 24.0676 43.8003 21.8002C43.8001 9.77947 34.0207 0 22 0ZM29.5378 64.1263H21.6577C21.0936 64.1263 20.6363 64.5836 20.6363 65.1477C20.6363 65.7118 21.0936 66.1691 21.6577 66.1691H29.4332C29.126 67.2014 28.1695 67.9566 27.039 67.9566H16.9609C15.8304 67.9566 14.8741 67.2014 14.5667 66.1691H16.9043C17.4684 66.1691 17.9257 65.7118 17.9257 65.1477C17.9257 64.5836 17.4684 64.1263 16.9043 64.1263H14.4621V61.9018H16.9043C17.4684 61.9018 17.9257 61.4444 17.9257 60.8803C17.9257 60.3161 17.4684 59.8589 16.9043 59.8589H14.4621V58.1845H29.5377V59.8589H21.6573C21.0932 59.8589 20.6359 60.3162 20.6359 60.8803C20.6359 61.4446 21.0932 61.9018 21.6573 61.9018H29.5378V64.1263ZM40.0971 29.4668C40.087 29.4898 40.0765 29.5133 40.0663 29.5364C40.0658 29.5376 40.0654 29.539 40.0648 29.5404C36.4169 37.8163 33.3429 45.5621 31.9715 54.5952C31.849 55.402 31.2268 56.008 30.4477 56.121C30.4397 56.122 30.4318 56.1218 30.4239 56.1229C30.3781 56.1291 30.3372 56.1335 30.2992 56.1365C30.261 56.1388 30.223 56.1417 30.1842 56.1417H13.8159C13.7772 56.1417 13.7392 56.1388 13.701 56.1365C13.6629 56.1333 13.622 56.129 13.5763 56.1229C13.5685 56.1218 13.5607 56.122 13.5529 56.121C12.7734 56.0081 12.1512 55.4022 12.0285 54.5952C10.6571 45.5625 7.58313 37.8166 3.93521 29.5404C3.93466 29.539 3.93425 29.5378 3.9337 29.5364C3.92345 29.5133 3.91292 29.4896 3.90267 29.4664C3.88763 29.4322 3.87273 29.3982 3.85755 29.364C4.0197 29.3772 4.18212 29.3883 4.34427 29.4012C4.68798 29.4284 5.03196 29.4544 5.37595 29.4799C5.8222 29.5133 6.26845 29.5454 6.71497 29.576C7.061 29.5997 7.40717 29.6225 7.75335 29.6447C8.19918 29.6731 8.64502 29.7 9.09113 29.7259C9.4373 29.7458 9.78348 29.7655 10.1299 29.7838C10.579 29.8076 11.0284 29.8295 11.4778 29.8507C11.82 29.8668 12.1622 29.8831 12.5046 29.8976C12.963 29.917 13.4217 29.934 13.8804 29.9506C14.2132 29.9627 14.5458 29.9755 14.8786 29.9861C15.3586 30.0014 15.8387 30.0135 16.3189 30.0257C16.6297 30.0336 16.9404 30.0428 17.2512 30.0494C17.7841 30.0607 18.3172 30.0682 18.8504 30.0757C19.1088 30.0794 19.367 30.0848 19.6254 30.0875C21.209 30.1043 22.7929 30.1042 24.3765 30.0875C24.6284 30.0848 24.8802 30.0796 25.132 30.076C25.6722 30.0685 26.2124 30.0607 26.7524 30.0492C27.0562 30.0428 27.3599 30.0338 27.6637 30.0261C28.1513 30.0138 28.6391 30.0014 29.1267 29.9859C29.4537 29.9755 29.7805 29.9629 30.1075 29.9511C30.5717 29.9342 31.0358 29.9171 31.4998 29.8975C31.8384 29.8831 32.1766 29.867 32.515 29.8511C32.9681 29.8298 33.4211 29.8078 33.874 29.7837C34.2178 29.7654 34.5615 29.746 34.9051 29.7262C35.353 29.7003 35.8007 29.6732 36.2483 29.6447C36.5937 29.6227 36.9388 29.5998 37.284 29.5762C37.7317 29.5455 38.1792 29.5131 38.6267 29.4798C38.9688 29.4542 39.3107 29.4285 39.6525 29.4014C39.8157 29.3885 39.9793 29.3774 40.1425 29.364C40.1272 29.3983 40.1123 29.4325 40.0971 29.4668ZM40.9975 27.2398C40.6577 27.269 40.3175 27.2967 39.9773 27.3244C39.6033 27.3549 39.2295 27.3865 38.8552 27.4151C38.425 27.4479 37.9944 27.4774 37.5638 27.5078C37.194 27.5339 36.8243 27.5611 36.4544 27.5853C36.0176 27.6139 35.5803 27.6389 35.1432 27.6648C34.7789 27.6864 34.4145 27.7096 34.05 27.7294C33.6042 27.7536 33.158 27.7742 32.7118 27.7957C32.3557 27.8129 31.9997 27.8318 31.6434 27.8472C31.1839 27.8672 30.7242 27.8832 30.2645 27.9004C29.921 27.9133 29.5777 27.9279 29.2341 27.9391C28.7511 27.9548 28.2678 27.9664 27.7845 27.979C27.4642 27.9874 27.144 27.9978 26.8237 28.0047C26.2872 28.0164 25.7507 28.0235 25.2141 28.0313C24.9466 28.0351 24.6792 28.0412 24.4117 28.0441C23.6078 28.0529 22.8037 28.0574 21.9997 28.0574C21.9978 28.0574 21.9959 28.0574 21.9939 28.0574C21.1919 28.0574 20.3898 28.0529 19.5878 28.0441C19.3166 28.0411 19.0455 28.0349 18.7742 28.031C18.2416 28.0232 17.7088 28.0162 17.1761 28.0046C16.8521 27.9976 16.5283 27.987 16.2045 27.9786C15.725 27.966 15.2454 27.9547 14.766 27.9391C14.4192 27.9278 14.0726 27.913 13.7258 27.9001C13.2695 27.8832 12.813 27.8672 12.3569 27.8474C11.9978 27.8318 11.6387 27.8128 11.2797 27.7954C10.8365 27.7739 10.3932 27.7536 9.95027 27.7295C9.58346 27.7096 9.21692 27.6863 8.85024 27.6646C8.41533 27.6387 7.98043 27.6139 7.54581 27.5854C7.17434 27.5611 6.80315 27.5337 6.43182 27.5076C6.00267 27.4774 5.5735 27.448 5.14462 27.4152C4.76974 27.3866 4.39527 27.3549 4.02066 27.3244C3.68091 27.2967 3.34117 27.2692 3.00169 27.2399C2.49734 25.4761 2.24209 23.6496 2.24209 21.8003C2.24209 10.9062 11.1051 2.04312 21.9993 2.04312C32.8934 2.04312 41.7565 10.9062 41.7565 21.8003C41.7571 23.6496 41.5019 25.4761 40.9975 27.2398Z"
+                fill="#57ADE4"
+              />
+            </svg>
+            <h3>УФ-лампа</h3>
+            <p>
+              Внутри фильтра, в отдельной камере, установлена УФ-лампа,
+              открытого свечения.
+            </p>
+          </li>
+          <li class="advantage">
+            <svg
+              width="60"
+              height="70"
+              viewBox="0 0 60 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M59.2268 10.3852C59.2005 9.95583 58.8674 9.61047 58.4406 9.5676C44.5438 8.17881 30.5764 0.197269 30.4363 0.116822C30.1644 -0.0387779 29.832 -0.0387779 29.5618 0.116822C29.4228 0.197269 15.4666 8.17796 1.55844 9.5676C1.1316 9.61047 0.798542 9.95583 0.773092 10.3852C0.750376 10.756 -1.13066 47.7519 29.4882 69.8357C29.6412 69.9458 29.8206 70.0002 29.9998 70.0002C30.1791 70.0002 30.3583 69.946 30.5113 69.8357C61.1305 47.7518 59.2495 10.755 59.2268 10.3852ZM29.9991 68.0438C3.04697 48.2145 2.40954 16.449 2.49597 11.2247C15.2733 9.74335 27.5154 3.2553 29.9991 1.87795C32.4827 3.2553 44.7257 9.74318 57.5022 11.2247C57.5932 16.4471 56.9749 48.1986 29.9991 68.0438Z"
+                fill="#57ADE4"
+              />
+              <path
+                d="M52.6654 15.528C52.6402 15.0986 52.3069 14.7533 51.8801 14.7104C41.2445 13.6478 30.5439 7.53417 30.4365 7.47302C30.1646 7.31742 29.8322 7.31742 29.562 7.47302C29.4552 7.53417 18.7653 13.647 8.11824 14.7104C7.69141 14.7533 7.35834 15.0986 7.33289 15.528C7.31462 15.8139 5.86366 44.3613 29.4875 61.4001C29.6406 61.5103 29.8199 61.5646 29.9991 61.5646C30.1784 61.5646 30.3576 61.5104 30.5106 61.4001C54.1336 44.3613 52.6829 15.8141 52.6654 15.528ZM29.9991 59.6074C9.75964 44.6254 9.0129 20.831 9.06004 16.3658C18.6936 15.2026 27.8881 10.3948 29.9991 9.23245C32.1102 10.3946 41.3046 15.2026 50.9381 16.3658C50.9854 20.831 50.2387 44.6254 29.9991 59.6074Z"
+                fill="#57ADE4"
+              />
+            </svg>
+            <h3>Надёжность</h3>
+            <p>
+              Настоящий Биофильтр, сделан из прочной, надежной нержавеющей
+              стали, толщиной 1,5милиметра. Отсутствие многочисленных фитингов с
+              прокладками.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="operating_principle" id="biofilter_principle">
+        <h1>Принцип работы</h1>
+        <div class="principles">
+          <div class="principle-row">
+            <div class="principle">
+              <h2>01</h2>
+              <p>Вода в фильтр подаётся насосом из скиммера</p>
+            </div>
+            <div class="principle">
+              <h2>02</h2>
+              <p>
+                В фильтр вода попадает через приварной штуцер в корпусе - резьба
+                наружная, d-1 1\2
+              </p>
+            </div>
+            <div class="principle">
+              <h2>03</h2>
+              <p>Соедините скиммер с фильтром с помощью трубы ПНД</p>
+            </div>
+            <div class="principle">
+              <h2>04</h2>
+              <p>
+                Выход воды из фильтра сделан в виде излива. Просто установите
+                фильтр на берегу
+              </p>
+            </div>
+          </div>
+          <div class="principle-row">
+            <div class="principle">
+              <h2>05</h2>
+              <p>
+                В отдельной камере, установлен УФ - фильтр открытого свечения.
+                Свет, отражаясь от стен из нержавеющей стали прибавляют к
+                мощности излучения лампы до 50%
+              </p>
+            </div>
+            <div class="principle">
+              <h2>06</h2>
+              <p>
+                Вода, обработанная УФ - излучением, через фильтрующую
+                губку(используется по желанию) перетекает в камеру биологической
+                очистки
+              </p>
+            </div>
+            <div class="principle">
+              <h2>07</h2>
+              <p>
+                Компрессор находится внутри фильтра. Он подает воздух на
+                диффузор, находящийся в камере биологической очистки.
+                Используйте компрессор зимой для создания лунки
+              </p>
+            </div>
+          </div>
+          <div class="principle-row">
+            <div class="principle full-width">
+              <h2>08</h2>
+              <p>
+                На плавающей биозагрузке, появится колония полезных, живых
+                бактерий. В результате непрерывного движения на загрузке не
+                образуется биопленки. Бактерии очищает воду не только фильтре.
+                Бактерии попадают в пруд, где утилизируют остатки корма,
+                продукты жизнедеятельности рыб, и уменьшают донные отложения
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="equipments" id="biofilter_equipment">
+        <h1>Комплектация</h1>
+        <div class="equipment">
+          <div class="left">
+            <p>
+              Биофильтр в стальном корпусе
+              <span>•••••••••••••••••••••••••••••••</span> 1 шт.<br />
+              <br />
+              Транспортные габариты д*ш*в
+              <span>••••••••••••••••••••••</span> 116*61*78 cм<br />
+              <br />
+              Вес
+              <span
+                >••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</span
+              >
+              48 кг<br />
+              <br />
+              Крышка стальная
+              <span>••••••••••••••••••••••••••••••••••••••••••••••</span>
+              1 шт.
+              <br />
+              <br />
+              Скиммер с насосом 13500 л\ч (на 60 м2)
+              <span>••••••••••••••••••</span> 1 шт. <br />
+              <br />
+              Стальная крышка на скиммер
+              <span>•••••••••••••••••••••••••••••••</span> 1 шт.
+              <br />
+              <br />
+              Плавающая биозагрузка S-800
+              <span>••••••••••••••••••••••••</span> 50 литров<br />
+              <br />
+              Стартовые бактерии
+              <span>••••••••••••••••••••••••••••••••••••••••</span>
+              100 гр<br />
+            </p>
+          </div>
+          <div class="right">
+            <p>
+              УФ - фильтр 55 waтт
+              <span>•••••••••••••••••••••••••••••••••••••••••••••</span>
+              1 шт.<br />
+              <br />
+              Компрессор 15000 л \ч (25 л \мин)
+              <span>••••••••••••••••••••••••••••</span> 1 шт.<br />
+              <br />
+              Диффузор дисковый с утяжелителем
+              <span>••••••••••••••••••••••••••</span> 1 шт.<br />
+              <br />
+              Переходник 1\2 * 3\4
+              <span>•••••••••••••••••••••••••••••••••••••••••••</span> 1 шт.
+              <br />
+              <br />
+              Муфта ПНД компрессионная 1 1\2
+              <span>••••••••••••••••••••••••••••</span> 2 шт. <br />
+              <br />
+              Кран ПНД 2”
+              <span>•••••••••••••••••••••••••••••••••••••••••••••••••••••</span>
+              1 шт.
+              <br />
+              <br />
+              Губка 600*150*50 мм
+              <span>•••••••••••••••••••••••••••••••••••••••••••</span> 1 шт.<br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="info_biofilter" id="biofilter_control">
+        <h1>Запуск и консервация биофильтра, контроль работы</h1>
+        <div class="info_btn">
+          <button class="btn">Запуск в работу</button>
+          <button class="unbtn">Консервация на зиму</button>
+          <button class="unbtn third">Контроль работы биофильтра</button>
+        </div>
+        <div class="start">
+          <div class="info_left">
+            <h3>Запуск биофильтра в работу, весной или после покупки.</h3>
+            <ul>
+              <li>
+                Установите биофильтр на берегу водоема, так чтобы вода из излива
+                вытекала в пруд
+              </li>
+              <li>Включите насос , УФ - фильтр и компрессор.</li>
+              <li>
+                При достижении температуры воды +10 - 15 градусов, отключите УФ
+                – фильтр.
+              </li>
+              <li>Перекройте кран на трубе подающей воду в фильтр.</li>
+              <li>Выключите насос.</li>
+              <li>
+                Засыпьте сухие стартовые бактерии в камеру биологической
+                загрузки. Для быстрого появления колонии гетеротрофных бактерий.
+                Компрессор обязательно должен работать!
+              </li>
+              <li>
+                Через 2 – 3 дня, включите насос и откройте перекрытый кран.
+              </li>
+              <li>Включите УФ – фильтр.</li>
+            </ul>
+          </div>
+          <img src="Assets/images/info-biofilter.png" alt="" />
+        </div>
+        <div class="warning">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 8V12M12 16H12.01M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+              stroke="#57ADE4"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p>ВНИМАНИЕ: все действия надо производить именно в этом порядке!</p>
+        </div>
+      </div>
+      <div class="service" id="biofilter_service">
+        <h1>Обслуживание</h1>
+        <div class="service_content">
+          <div class="service_left">
+            <ul>
+              <li>Примерно раз в месяц проверяете прозрачность колбы</li>
+              <li>УФ – фильтра.</li>
+              <li>Отключите от электросети УФ – фильтр.</li>
+              <li>Приподнимите и отодвиньте крышку фильтра в сторону пруда.</li>
+              <li>
+                Вытащите УФ – фильтр из посадочного места, если колба чистая,
+                вставьте её обратно и включите.
+              </li>
+              <li>
+                Если требуется чистка, помойте колбу любым средством для стекол.
+              </li>
+              <li>
+                В конце сезона, достаньте насос из скиммера. Открутите четыре
+                болта удерживающие крышку со стороны крыльчатки. Промойте. Если
+                есть известковый налет, удалите его с помощью лимонной кислоты.
+              </li>
+            </ul>
+          </div>
+          <img src="Assets/images/service.png" />
+        </div>
+      </div>
+      <div class="guarantee">
+        <div class="guarantee_content">
+          <div class="guarantee_left">
+            <h1>
+              Гарантия на корпус <br />
+              фильтра <span>10 лет</span>
+            </h1>
+            <p>
+              Предварительные выводы неутешительны: социально-экономическое
+              развитие способствует подготовке и реализации укрепления моральных
+              ценностей. Лишь диаграммы связей рассмотрены исключительно в
+              разрезе маркетинговых и финансовых предпосылок. С учётом
+              сложившейся международной обстановки, социально-экономическое
+              развитие не оставляет шанса для позиций, занимаемых участниками в
+              отношении поставленных задач. Ясность нашей позиции очевидна:
+              консультация с широким активом прекрасно подходит для реализации
+              новых принципов формирования материально-технической и кадровой
+              базы.
+            </p>
+          </div>
+          <img src="Assets/images/guarantee.jpg" alt="Гарантия" />
+        </div>
+      </div>
+      <div class="product">
+        <div class="product_content">
+          <img
+            src="Assets/images/product.jpg"
+            alt="Биофильтр"
+            class="product_image"
+          />
+          <div class="product_info">
+            <div class="product_header">
+              <h1 class="product_name">
+                БИОФИЛЬТР <br />
+                <span>+ СКИММЕР</span>
+              </h1>
+              <div class="product_arrows">
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="32"
+                    height="32"
+                    rx="16"
+                    stroke="#D5D5D5"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M8 17H26M12 21L8 17L12 21ZM8 17L12 13L8 17Z"
+                    stroke="#D5D5D5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="32"
+                    height="32"
+                    rx="16"
+                    stroke="#0C191F"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M22 13L26 17M26 17L22 21M26 17H8"
+                    stroke="#0C191F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="product_description">
+              Использование скиммера в системе очистке водоема является
+              обязательным условием правильной фильтрации. Мусор попадающий в
+              водоем, как правило, тонет не сразу, а какое то время остается на
+              поверхности. Для его сбора и применяет скиммер. Мы выбрали самый
+              эффективный вариант для этой задачи: встраиваемый, прибрежный.
+              Мощный насос как одеяло затягивает в скиммер тонкий, верхний слой
+              воды на котором плавает мусор. Большая корзина для сбора мусора не
+              требует частой очистки. Так как скиммер находится на берегу его
+              гораздо удобнее обслуживать, чем скиммеры установленные или
+              плавающие в воде. Если у вас уже есть скиммер или его установка
+              технически не возможна, укажите это в заявке, мы уберем его из
+              комплектации и отнимем стоимость.
+            </p>
+            <div class="product_footer">
+              <div class="product_prices">
+                <p class="old_cost">250 000 руб.</p>
+                <h2 class="cost">249 000 руб.</h2>
+              </div>
+              <button class="btn" data-fancybox data-src="#modal-content">
+                Оформить заявку
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="for_filter">
+        <div class="for_filter_header">
+          <h1>Оборудование и материалы для фильтра</h1>
+          <div class="arrows">
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="1"
+                y="1"
+                width="32"
+                height="32"
+                rx="16"
+                stroke="#D5D5D5"
+                stroke-width="2"
+              />
+              <path
+                d="M8 17H26M12 21L8 17L12 21ZM8 17L12 13L8 17Z"
+                stroke="#D5D5D5"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="1"
+                y="1"
+                width="32"
+                height="32"
+                rx="16"
+                stroke="#0C191F"
+                stroke-width="2"
+              />
+              <path
+                d="M22 13L26 17M26 17L22 21M26 17H8"
+                stroke="#0C191F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="for_filter_content" id="equipment">
+          <div class="material">
+            <img src="Assets/images/for-filter1.jpg" alt="Биозагрузка" />
+            <div class="material_info">
+              <h3 class="material_name">
+                Плавающая биозагрузка S800 <br />
+                50 литров
+              </h3>
+              <div class="material_prices">
+                <h3 class="current_price">
+                  3 800 руб. <span class="old_price">4 000 руб.</span>
+                </h3>
+              </div>
+              <button class="btn" data-fancybox data-src="#modal-content">
+                Оформить заявку
+              </button>
+            </div>
+          </div>
+          <div class="material">
+            <img src="Assets/images/for-filter2.jpg" alt="УФ - фильтр" />
+            <div class="material_info">
+              <h3 class="material_name">УФ - фильтр 40w</h3>
+              <div class="material_prices">
+                <h3 class="current_price">
+                  18 100 руб. <span class="old_price">20 000 руб.</span>
+                </h3>
+              </div>
+              <button class="btn" data-fancybox data-src="#modal-content">
+                Оформить заявку
+              </button>
+            </div>
+          </div>
+          <div class="material">
+            <img
+              src="Assets/images/for-filter3.png"
+              alt="Компрессор мембранный"
+            />
+            <div class="material_info">
+              <h3 class="material_name">
+                Компрессор мембранный <br />
+                15 000 л\ч
+              </h3>
+              <div class="material_prices">
+                <h3 class="current_price">
+                  9 200 руб. <span class="old_price">10 000 руб.</span>
+                </h3>
+              </div>
+              <button class="btn" data-fancybox data-src="#modal-content">
+                Оформить заявку
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="create_pond">
+        <div class="contact_us">
+          <div class="info" id="pond">
+            <h1>
+              Создание водоемов <br />
+              по типовому проекту Михайлова
+            </h1>
+            <p>С установкой собственной фильтрационной системы.</p>
+            <button class="bid btn">Заказать</button>
+            <div class="arrows"></div>
+          </div>
+        </div>
+      </div>
+      <div class="about_project"></div>
+      <div class="about">
+        <div class="biofilter" id="company">
+          <h1>О проекте Михайлова</h1>
+          <div class="first">
+            <p>
+              Создание водоемов по собственному оригинальному проекту. С <br />
+              системой фильтрации. <br />Преимущества данного проекта: в
+              правильном подборе <br />
+              материалов и оборудования для строительства. Рациональное <br />
+              использование материалов, минимальная потребность в уходе,
+              <br />энергосбережение, отсутствие дорогих расходных материалах,
+              <br />требующих частой замены. Все нацелено на то, чтобы ни один
+              <br />рубль не будет потрачен впустую. Ни пруд, ни фильтр не
+              <br />побеспокоит вас в течении всего сезона, этому мы уделили
+              <br />особое внимание. Отлаженная технология, детальный план
+              <br />проводимых работ. Оптимизированный расход используемых
+              <br />материалов.
+            </p>
+            <img src="Assets/images/biofilter1.jpg" alt="Биофильтр" />
+          </div>
+          <div class="second">
+            <p>
+              Пруд с размером 10*6*1,5 метра. <br />объемом 80000 литров с
+              возможностью зарыбления. <br />
+              С системой фильтрации, включающею в себя биофильтр <br />
+              (комплектация), скиммер. <br />активная ссылка<br />
+              Отделка береговой линии включена в стоимость. <br />Цена за такой
+              проект будет в районе 500 000 рублей. <br />Также оказываем услугу
+              по контролю (шеф монтаж) за <br />строительством водоема по нашему
+              проекту. Цена договорная.
+            </p>
+            <img src="Assets/images/biofilter2.jpg" alt="Биофильтр" />
+          </div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example_header">
+          <h1>Примеры выполненных проектов</h1>
+        </div>
+        <div class="example_content">
+          <div class="example_left">
+            <h3>Пруд с размером 10*6*1,5 метра.</h3>
+            <p>
+              С системой фильтрации, включающею в себя биофильтр (комплектация),
+              скиммер. Отделка береговой линии включена в <br />стоимость.
+              <br />
+              Цена за такой проект будет в районе 500 000 рублей.
+            </p>
+            <h3>Характеристика проекта</h3>
+            <p>
+              Объем
+              <svg
+                width="364"
+                height="1"
+                viewBox="0 0 364 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  y1="0.5"
+                  x2="364"
+                  y2="0.5"
+                  stroke="#556063"
+                  stroke-dasharray="2 2"
+                />
+              </svg>
+              80 000 литров<br />Размер
+              <svg
+                width="355"
+                height="1"
+                viewBox="0 0 364 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  y1="0.5"
+                  x2="364"
+                  y2="0.5"
+                  stroke="#556063"
+                  stroke-dasharray="2 2"
+                />
+              </svg>
+              10*6*1,5 метра
+            </p>
+            <div class="bottom_row">
+              <button class="btn" data-fancybox data-src="#modal-content">
+                оформить заявку
+              </button>
+              <div class="arrows">
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="32"
+                    height="32"
+                    rx="16"
+                    stroke="#D5D5D5"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M8 17H26M12 21L8 17L12 21ZM8 17L12 13L8 17Z"
+                    stroke="#D5D5D5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="32"
+                    height="32"
+                    rx="16"
+                    stroke="#0C191F"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M22 13L26 17M26 17L22 21M26 17H8"
+                    stroke="#0C191F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <img
+            src="Assets/images/example.jpg"
+            alt="Пример проекта"
+            class="example_image"
+          />
+        </div>
+      </div>
+      <div class="stocks">
+        <div class="stock_header">
+          <h1>Акции и спецпредложения</h1>
+        </div>
+        <div class="stock_content">
+          <div class="stock">
+            <div class="stock_text">
+              <h3>Скидка в обмен на старый фильтр</h3>
+              <p>
+                Сдайте старый пластиковый фильтр и получите новый стальной
+                биофильтр со скидкой <br />
+                5 %
+              </p>
+            </div>
+            <img src="Assets/images/stock1.png" class="stock_image" />
+          </div>
+          <div class="stock">
+            <div class="stock_text">
+              <h3>Скидка при заказе строительства пруда</h3>
+              <p>
+                Заключите с нами договор на создание водоема по нашему типовому
+                проекту, и получите скидку на биофильтр 10 % + <br />
+                проект в подарок.
+              </p>
+            </div>
+            <img
+              src="Assets/images/stock2.png"
+              class="stock_image stock_image_pool"
+            />
+          </div>
+          <div class="stock">
+            <div class="stock_text">
+              <h3>
+                Доставка до <br />
+                терминала
+              </h3>
+              <p>
+                Доставка до терминала ТК для отправки в регионы - <br />
+                БЕСПЛАТНО
+              </p>
+            </div>
+            <img src="Assets/images/stock1.png" class="stock_image" />
+          </div>
+          <div class="stock">
+            <div class="stock_text">
+              <h3>Бесплатная доставка</h3>
+              <p>
+                Доставка по Москве и МО - <br />
+                БЕСПЛАТНО
+              </p>
+            </div>
+            <img src="Assets/images/stock3.png" class="stock_image_box" />
+          </div>
+        </div>
+      </div>
+      <div class="questions" id="faq">
+        <div class="questions_header">
+          <h1>Частые вопросы</h1>
+        </div>
+        <div class="questions_content">
+          <div class="question">
+            <input type="checkbox" id="question1" class="question_checkbox" />
+            <label for="question1" class="question_item">
+              <h3>Пластик дешевле. Почему дорогая нержавейка?</h3>
+              <svg
+                class="arrow"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M19 9.5L12 16.5L5 9.5"
+                  stroke="#57ADE4"
+                  stroke-width="2"
+                />
+              </svg>
+            </label>
+            <div class="answer">
+              <p>
+                Стальной корпус, даёт вам абсолютную уверенность в надежности.
+                Ни через год, ни через десять лет в корпусе фильтра не появятся
+                трещины и протечки, а внешний вид фильтра будет таким же как в
+                день покупки. Чего не скажешь о пластмассовом корпусе, со
+                множеством отверстий, различных фитингов и прокладками. Если
+                продают запасные части, значить есть такая необходимость.
+                Посмотрите на цены за пластмассовые детали! От тысячи рублей и
+                выше! На ремонт помимо не малых денег, придется тратить ещё и
+                время и нервы.
+              </p>
+            </div>
+          </div>
+          <div class="question">
+            <input type="checkbox" id="question2" class="question_checkbox" />
+            <label for="question2" class="question_item">
+              <h3>Почему нет губок?</h3>
+              <svg
+                class="arrow"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M19 9.5L12 16.5L5 9.5"
+                  stroke="#57ADE4"
+                  stroke-width="2"
+                />
+              </svg>
+            </label>
+            <div class="answer">
+              <p>
+                Строго говоря, одна не большая губка все же есть. Но я не
+                настаиваю на её использование, вы можете её убрать в любой
+                момент. Для начала давайте разберемся что такое «фильтрующая
+                губка». Это ни что-то специально разработанное, с какими-то
+                чудесными свойствами. Это поролон (рекутивированный поролон).
+                Фильтровать губкам не чего, какой мусор может быть в пруду? Если
+                даже он есть, насос с защитной решеткой, а чаще двумя, через
+                себя его не пропустит. Через не продолжительное время, губки
+                просто забьются биомассой, и начнут цвести. Биологической
+                очистки в губках тоже не может быть. Нет аэрации, а бактериям
+                без кислорода не выжить. Губки в фильтре не подвижны, в отличии
+                от «кипящей» биозагрузки, из-за этого на губках образуется
+                «биопленка» из отмерших бактерий. Она не дает колонии активно
+                развиваться. Пример из практики: в конце сезона все фильтры с
+                губками больше напоминает болото с резким неприятным запахом, в
+                моем биофильтре такого не будет. Понимая всю бесполезность
+                губок, мы отказался от их использованья. Плавающая биозагрузка,
+                и большое количество кислорода лучшая среда для бактерий. У
+                губок есть еще огромный минус, необходимость их замены примерно
+                раз в три года и заоблачная цена. Биозагрузка прослужит вам не
+                менее десяти лет, а стоит она в разы дешевле. Отдавать за
+                бесполезный поролон десятки тысяч рублей? Я не готов, а вы?
+              </p>
+            </div>
+          </div>
+          <div class="question">
+            <input type="checkbox" id="question3" class="question_checkbox" />
+            <label for="question3" class="question_item">
+              <h3>Почему нет цеолита?</h3>
+              <svg
+                class="arrow"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M19 9.5L12 16.5L5 9.5"
+                  stroke="#57ADE4"
+                  stroke-width="2"
+                />
+              </svg>
+            </label>
+            <div class="answer">
+              <p>
+                Минерал цеолит, действительно обладает уникальными свойствами.
+                Но он абсолютно, категорически, принципиально, в априори, не
+                подходит для фильтрации воды в прудах. (где цеолит действительно
+                полезен можно узнать из интернета). Более того цеолит, может
+                быть вреден. Любой специалист вам скажет,- «не используйте в
+                пруду пористые материалы», например кирпич как подставку для
+                чего либо. Поры цеолита при большем количестве проходящей через
+                него грязной или цветущей воды очень быстро забьются биомассой.
+                Вместо фильтрации вы получите источник цветения воды. И еще один
+                важный момент цеолит очень разный. У цеолита с разных
+                месторождений, разные свойства, есть даже искусственный. А какой
+                цеолит у вас? Может это вообще не цеолит? Применять в фильтре,
+                то что бесполезно, а иногда и вредно, я не готов. А вы?
+              </p>
+            </div>
+          </div>
+          <div class="question">
+            <input type="checkbox" id="question4" class="question_checkbox" />
+            <label for="question4" class="question_item">
+              <h3>
+                Почему на одинаковый объем воды, насос и УФ-фильтры слабее?
+              </h3>
+              <svg
+                class="arrow"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M19 9.5L12 16.5L5 9.5"
+                  stroke="#57ADE4"
+                  stroke-width="2"
+                />
+              </svg>
+            </label>
+            <div class="answer">
+              <p>
+                Другие производители, делают основной упор на стерилизацию.
+                Ультрофиолет, единственное что их спасает пруд от бурного
+                цветения воды. Простой пример: если вы выкинете из фильтра губки
+                и цеолит, разницы вы не увидите. А вот если отключить УФ лампы,
+                разница будет видна сразу. Постоянное перекачивание, мощным
+                насосом воды через стерилизатор убивает все живое. Именно
+                поэтому такие фильтры, даже с большой натяжкой, нельзя называть
+                биофильтром. В моем фильтре, упор сделан на биологическую
+                очистку. Нет необходимости в мощных УФ- лампах и насосе большой
+                производительности. Я хочу, что бы в пруду соблюдался правильный
+                био баланс, способствующий саморегуляции. А что предпочтете вы?
+              </p>
+            </div>
+          </div>
+          <div class="question">
+            <input type="checkbox" id="question5" class="question_checkbox" />
+            <label for="question5" class="question_item">
+              <h3>Почему нет кранов, для слива воды из фильтра?</h3>
+              <svg
+                class="arrow"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M19 9.5L12 16.5L5 9.5"
+                  stroke="#57ADE4"
+                  stroke-width="2"
+                />
+              </svg>
+            </label>
+            <div class="answer">
+              <p>
+                В них нет необходимости. В биофильтре упор сделан на работу
+                гетеротрофных бактерий, питающихся органикой. Поэтому
+                органических отложений не будет. Наш биофильтр на протяжении
+                всего сезона будет чистым и не какие сливы ему просто не нужны.
+                Повторюсь любая врезка в пластиковый корпус слабое место. Если
+                вы решите прикопать фильтр со сливами, придется оставлять доступ
+                к кранам, прокапать траншею, уложить трубу, вывести трубу
+                куда-то для слива грязной воды. По-моему очень хлопотное
+                занятие. Мой фильтр вы сможете закапать, по самый излив.
+              </p>
+            </div>
+          </div>
+          <div class="question">
+            <input type="checkbox" id="question6" class="question_checkbox" />
+            <label for="question6" class="question_item">
+              <h3>Почему компрессор установлен внутри фильтра?</h3>
+              <svg
+                class="arrow"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M19 9.5L12 16.5L5 9.5"
+                  stroke="#57ADE4"
+                  stroke-width="2"
+                />
+              </svg>
+            </label>
+            <div class="answer">
+              <p>
+                Причин такого решения несколько. Работу даже самых тихих
+                компрессоров будет слышно. Второе, чем короче шланги подающие
+                воздух, тем меньше потери производительности. Третье, летом
+                компрессор надо защитить от солнца, а зимой от снега. С
+                компрессором внутри фильтра, всех этих проблем не возникнет.
+              </p>
+            </div>
+          </div>
+          <div class="question">
+            <input type="checkbox" id="question7" class="question_checkbox" />
+            <label for="question7" class="question_item">
+              <h3>«Зачем нужен утяжелитель для диффузора».</h3>
+              <svg
+                class="arrow"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M19 9.5L12 16.5L5 9.5"
+                  stroke="#57ADE4"
+                  stroke-width="2"
+                />
+              </svg>
+            </label>
+            <div class="answer">
+              <p>
+                Диффузоры, как правило, очень легкие, при подачи воздуха могут
+                вплывать на поверхность. Что б этого не происходило, нужен
+                утяжелитель, к которому крепится диффузор.
+              </p>
+            </div>
+          </div>
+          <button class="btn">Задать вопрос</button>
+        </div>
+      </div>
+      <div class="stages_of_work_biofilter">
+        <div class="stages_of_work_biofilter_header" id="stages">
+          <h1>Этапы работы с покупателями биофильтра</h1>
+        </div>
+        <div class="stages_of_work_biofilter_content">
+          <div class="stage">
+            <div class="number_line">
+              <h1 class="number">01</h1>
+              <hr class="line" />
+            </div>
+            <div class="order">
+              <h3>Заказ</h3>
+              <p>
+                Заказать систему фильтрации можно на сайте заполнив форму
+                заявки. Вы получите счет на оплату и договор на поставку.
+              </p>
+              <button class="btn" data-fancybox data-src="#modal-content">
+                Оформить заявку
+              </button>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="number_line">
+              <h1 class="number">02</h1>
+              <hr class="line" />
+            </div>
+            <div class="order">
+              <h3>Оплата</h3>
+              <p>
+                Оплатите счет. Вам придет документ подтверждающий оплату и
+                подтверждение сроков поставки.
+              </p>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="number_line">
+              <h1 class="number">03</h1>
+              <hr class="line" />
+            </div>
+            <div class="order">
+              <h3>Доставка</h3>
+              <p>
+                В назначенное договором поставки время мы привезем систему
+                фильтрации в полном соответствии с заявленным комплектом
+                поставки.
+              </p>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="number_line">
+              <h1 class="number">04</h1>
+              <hr class="line" />
+            </div>
+            <div class="order">
+              <h3>Консультация</h3>
+              <p>Подробно проконсультируем по:</p>
+              <ul>
+                <li>Установке</li>
+                <li>Подключению</li>
+                <li>Контролю работы</li>
+                <li>Обслуживанию</li>
+                <li>Запуску камеры биологической очистки</li>
+                <li>Консервации на зимний период</li>
+                <li>Подробно ответим на все вопросы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pool"></div>
+      <div class="stages_of_work_pond">
+        <div class="stages_of_work_biofilter_header">
+          <h1>Этапы работы с заказчиками создания водоемов</h1>
+        </div>
+        <div class="stages_of_work_biofilter_content">
+          <div class="stage">
+            <div class="number_line">
+              <h1 class="number">01</h1>
+              <hr class="line" />
+            </div>
+            <div class="order">
+              <h3>Заказ</h3>
+              <p>
+                Заполните заявку на выезд специалиста. Вы получите счет <br />
+                на оплату и договор на <br />
+                оказание услуг.
+              </p>
+              <button class="btn" data-fancybox data-src="#modal-content">
+                Оформить заявку
+              </button>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="number_line">
+              <h1 class="number">02</h1>
+              <hr class="line" />
+            </div>
+            <div class="order">
+              <h3>Оплата</h3>
+              <p>
+                Оплатите счет. Вам придет документ подтверждающий оплату и
+                подтверждение даты и времени выезда.
+              </p>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="number_line">
+              <h1 class="number">03</h1>
+              <hr class="line" />
+            </div>
+            <div class="order">
+              <h3>Консультация</h3>
+              <ul>
+                <li>Проведем консультацию в назначенное время</li>
+                <li>Предоставим смету</li>
+                <li>Описание материалов и оборудования</li>
+                <li>График и порядок проведения работ</li>
+                <li>Подарим проект</li>
+                <li>Дадим скидку на систему фильтрации</li>
+              </ul>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="number_line">
+              <h1 class="number">04</h1>
+              <hr class="line" />
+            </div>
+            <div class="order">
+              <h3>Строительство</h3>
+              <p>
+                После согласования всех деталей проекта, цены, и сроков
+                проведения работ вы на почту получите счет на оплату и договор
+                на строительство. Оплатите счет. Документ подтверждающий оплату
+                придет на почту. Мы приступим к строительству и монтажу системы
+                фильтрации согласно дате указанной в договоре.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cooperation">
+          <div class="cooperation_content">
+            <div class="cooperation_header">
+              <h3>Приглашаем к сотрудничеству</h3>
+            </div>
+            <p class="cooperation_text">
+              Торговые организации, ландшафтные фирмы, ландшафтных дизайнеров.
+              Вы точно порадуете своих покупателей и заказчиков - надежным,
+              эффективным и неприхотливым биофильтром «Проекта Михайлова».
+            </p>
+            <form action="?">
+              <div class="contacts">
+                
+                  <input type="text" placeholder="Имя" class="cooperation_input" />
+              <input
+                type="tel"
+                placeholder="Телефон"
+                class="cooperation_input"
+              />
+              <button
+                class="btn cooperation_btn"
+                type="submit"
+              >
+                Отправить заявку
+              </button>
+            </div>
+            </form>
+              
+          </div>
+        </div>
+        <div class="map">
+          <div class="map_content">
+            <div class="map_header">
+              <h1>Адреса и контакты</h1>
+            </div>
+
+            <div class="contact_item">
+              <div class="contact_row">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 21V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H7C6.46957 3 5.96086 3.21071 5.58579 3.58579C5.21071 3.96086 5 4.46957 5 5V21M19 21H5M19 21H21M19 21H14M5 21H3M5 21H10M14 21V16C14 15.7348 13.8946 15.4804 13.7071 15.2929C13.5196 15.1054 13.2652 15 13 15H11C10.7348 15 10.4804 15.1054 10.2929 15.2929C10.1054 15.4804 10 15.7348 10 16V21M14 21H10M9 7H10M9 11H10M14 7H15M14 11H15"
+                    stroke="#57ADE4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p>Адрес</p>
+              </div>
+              <h3>
+                Московская область, Московская область, Московская область
+              </h3>
+            </div>
+
+            <div class="contact_item">
+              <div class="contact_row">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V6C3 14.284 9.716 21 18 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V15.721C21.0001 15.511 20.934 15.3064 20.8112 15.136C20.6885 14.9657 20.5152 14.8383 20.316 14.772L15.823 13.274C15.5947 13.1981 15.3466 13.2071 15.1244 13.2993C14.9021 13.3915 14.7205 13.5607 14.613 13.776L13.483 16.033C11.0345 14.9267 9.07332 12.9655 7.967 10.517L10.224 9.387C10.4393 9.27945 10.6085 9.0979 10.7007 8.87564C10.7929 8.65339 10.8019 8.40534 10.726 8.177L9.228 3.684C9.16171 3.48496 9.03449 3.3118 8.86436 3.18905C8.69422 3.0663 8.48979 3.00016 8.28 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579Z"
+                    stroke="#57ADE4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p>Телефон</p>
+              </div>
+              <h3>+7 (995) 076-14-11</h3>
+            </div>
+
+            <div class="contact_item">
+              <div class="contact_row">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z"
+                    stroke="#57ADE4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p>Электронная почта</p>
+              </div>
+              <h3>georgyrmikhailov@yandex.ru</h3>
+            </div>
+            <div class="whatsapp_wrapper">
+              <div class="whatsapp">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="40" height="40" rx="20" fill="#48C95F" />
+                  <path
+                    d="M27.9268 12.0625C25.9512 10.0937 23.3171 9 20.5366 9C14.7561 9 10.0732 13.6667 10.0732 19.4271C10.0732 21.25 10.5854 23.0729 11.4634 24.6042L10 30L15.561 28.5417C17.0976 29.3438 18.7805 29.7812 20.5366 29.7812C26.3171 29.7812 31 25.1146 31 19.3542C30.9268 16.6563 29.9024 14.0312 27.9268 12.0625ZM25.5854 23.1458C25.3659 23.7292 24.3415 24.3125 23.8293 24.3854C23.3902 24.4583 22.8049 24.4583 22.2195 24.3125C21.8537 24.1667 21.3415 24.0208 20.7561 23.7292C18.122 22.6354 16.439 20.0104 16.2927 19.7917C16.1463 19.6458 15.1951 18.4062 15.1951 17.0937C15.1951 15.7812 15.8537 15.1979 16.0732 14.9062C16.2927 14.6146 16.5854 14.6146 16.8049 14.6146C16.9512 14.6146 17.1707 14.6146 17.3171 14.6146C17.4634 14.6146 17.6829 14.5417 17.9024 15.0521C18.122 15.5625 18.6341 16.875 18.7073 16.9479C18.7805 17.0938 18.7805 17.2396 18.7073 17.3854C18.6341 17.5312 18.561 17.6771 18.4146 17.8229C18.2683 17.9687 18.1219 18.1875 18.0488 18.2604C17.9024 18.4062 17.7561 18.5521 17.9024 18.7708C18.0488 19.0625 18.561 19.8646 19.3659 20.5937C20.3902 21.4687 21.1951 21.7604 21.4878 21.9063C21.7805 22.0521 21.9268 21.9792 22.0732 21.8333C22.2195 21.6875 22.7317 21.1042 22.878 20.8125C23.0244 20.5208 23.2439 20.5938 23.4634 20.6667C23.6829 20.7396 25 21.3958 25.2195 21.5417C25.5122 21.6875 25.6585 21.7604 25.7317 21.8333C25.8049 22.0521 25.8049 22.5625 25.5854 23.1458Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <button class="btn" data-fancybox data-src="#modal-content">
+                Оставить заявку на звонок
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
-        <div class="black-background-container-footer">
-            <div class="container-footer">
-                <a href = "#" class="defender">Политика конфиденциальности</a>
-                <p>Сайт разработан <img src="Assets/images/SVG/GRAMPUS.svg"></p>
-            </div>
-        </div>
+      <h3>Политика конфиденциальности</h3>
+      <div class="creator">
+        <h3>Сайт разработан</h3>
+        <h3><span>GRAMPUS</span></h3>
+      </div>
     </footer>
-</body>
+    <div class="form" style="display: none" id="modal-content">
+      <div class="div-input">
+        <h1 class="title">Форма обратной связи</h1>
+        <div class="input">
+          <input
+            type="text"
+            name="name"
+            placeholder="ФИО"
+            class="input-entry"
+            id="FIO"
+          />
+        </div>
+        <div class="input">
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Телефон"
+            class="input-entry"
+            id="phone"
+            maxlength="11"
+          />
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            name="comment"
+            placeholder="Комментарий"
+            class="input-entry"
+            id="comm"
+          />
+        </div>
+      </div>
+      <button class="submit" onclick="check()">
+        <div>Оформить заявку</div>
+      </button>
+    </div>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        caption: function (self, curr) {
+          return curr.opts.src;
+        },
+      });
+    </script>
+    <script>
+      function check() {
+        var fieldFIO = document.getElementById("FIO");
+        var fieldPhone = document.getElementById("phone");
+        var fieldComm = document.getElementById("comm");
+        if (
+          !fieldFIO.value.trim() ||
+          !fieldPhone.value.trim() ||
+          !fieldComm.value.trim()
+        ) {
+          alert("Заполните все поля");
+          return;
+        } else {
+          alert("Форма успешно отправлена!");
+          Fancybox.close();
+        }
+      }
+    </script>
+  </body>
 </html>
